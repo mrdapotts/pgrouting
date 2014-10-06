@@ -1,0 +1,1 @@
+select round(sum(cost)::numeric, 4) as cost from pgr_sql_asm_tsp(' select * from  atsp_04',0,false);

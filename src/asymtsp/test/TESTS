@@ -1,0 +1,11 @@
+To test
+cd    pgrouting-develop
+tools/test-runner.pl -alg asymtsp
+Tests 		Test case
+00		Asym Matrix
+01              invalid number of parmeters
+02              Sym matrix taken from tsp tests
+03              Test for negative cost
+04 		Test for negative source
+05 		Test for invalid startup position
+06 		Test for ordering and name lookup 

@@ -1,0 +1,15 @@
+drop table if exists atsp_06 cascade;
+create table atsp_06 (
+source_id serial not null primary key,
+source integer,
+target integer,
+cost double precision ,
+reverse_cost double precision );
+
+insert into atsp_06 (source,target,cost,reverse_cost) values
+(0,10,12.0,15.0),
+(0,20,11.0,8.0),
+(0,30,16,9),
+(10,20,15.0,14.0),
+(10,30,10.0,11.0),
+(20,30,18.0,17.0);
