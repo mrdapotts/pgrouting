@@ -11,8 +11,7 @@ else(APPLE)
     set(LIBRARY_MODE_TARGET "SHARED")
 endif(APPLE)
 
-add_library(routing_atsp ${LIBRARY_MODE_TARGET} TSPEngine.c tsp.h  tspInterface.c tspSupport.c )
-
+add_library(routing_atsp ${LIBRARY_MODE_TARGET} TSPEngine.c tsp.h  tspInterface.c tspSupport.cpp envSupport.c )
 if(WIN32)
   if(MSVC)
     set_target_properties(routing_atsp PROPERTIES COMPILE_FLAGS "-DHAVE_GETHOSTNAME")
